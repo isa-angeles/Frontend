@@ -13,7 +13,7 @@ function Modal({ isOpen, closeModal, onLoginSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = isRegistering ? 'http://localhost:3000/api/register' : 'http://localhost:3000/api/login';
+    const url = isRegistering ? 'https://backend-production-c06c.up.railway.app/api/register' : 'https://backend-production-c06c.up.railway.app/api/login';
     try {
       const response = await fetch(url, {
         method: 'POST',

@@ -24,7 +24,7 @@ function App() {
 
   const handleLogout = () => {
     // Realiza la solicitud para cerrar sesión
-    fetch('http://localhost:3000/api/logout')
+    fetch('https://backend-production-c06c.up.railway.app/api/logout')
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {

@@ -6,7 +6,7 @@ function UserStatus({ logout }) {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/current-user', {
+        const response = await fetch('https://backend-production-c06c.up.railway.app/api/current-user', {
           method: 'GET',
           credentials: 'include', 
         });
